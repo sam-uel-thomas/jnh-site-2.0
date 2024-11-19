@@ -1,8 +1,8 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Image from 'next/image';
+import ImageWithText from '../components/ImageWithText';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <main 
@@ -19,63 +19,44 @@ export default function Home() {
         {/* Grid Container */}
         <div className='grid grid-cols-1 gap-7'>
           {/* First Row - 1 Wide */}
-          <div className='relative col-span-1'>
-            <Image
-              src='/images/landing.jpg'
-              alt='landing'
-              layout='responsive' // Responsive layout for scaling
-              width={1384}
-              height={720}
-              className='object-contain'
-            />
-          </div>
+          <ImageWithText 
+            src='/images/landing.jpg'
+            alt='landing'
+            text='SHOP THE COLLECTION'
+            textColor='text-[#F0F0F0]'
+            bgColor='bg-[#1D1F2C]'
+          />
 
           {/* Second Row - 2 Wide */}
           <div className='grid grid-cols-2 gap-7'>
-            <div className='relative'>
-              <Image
-                src='/images/dance.jpg' // Replace with your image path
-                alt='image 1'
-                layout='responsive'
-                width={1600}
-                height={2000}
-                className='object-contain'
-              />
-            </div>
-            <div className='relative'>
-              <Image
-                src='/images/MILOMODEL3.jpg' // Replace with your image path
-                alt='image 2'
-                layout='responsive'
-                width={1600}
-                height={2000}
-                className='object-contain'
-              />
-            </div>
+            <ImageWithText 
+              src='/images/dance.jpg'
+              alt='image 1'
+              text='BALENCIAGA PROJECT'
+              textColor='text-[#00069E]' // Explicitly set color
+            />
+            <ImageWithText 
+              src='/images/MILOMODEL3.jpg'
+              alt='image 2'
+              text='SHOP'
+              textColor='text-[#92CE04]' // Different color for this image
+            />
           </div>
 
           {/* Third Row - 2 Wide */}
           <div className='grid grid-cols-2 gap-7'>
-            <div className='relative'>
-              <Image
-                src='/images/skip2.jpg' // Replace with your image path
-                alt='image 3'
-                layout='responsive'
-                width={1600}
-                height={2000}
-                className='object-contain'
-              />
-            </div>
-            <div className='relative'>
-              <Image
-                src='/images/skip3.jpg' // Replace with your image path
-                alt='image 4'
-                layout='responsive'
-                width={1600}
-                height={2000}
-                className='object-contain'
-              />
-            </div>
+            <ImageWithText 
+              src='/images/skip2.jpg'
+              alt='image 3'
+              text='GENERAL WORKS'
+              textColor='text-[#D703A0]' // Different color for this image
+            />
+            <ImageWithText 
+              src='/images/skip3.jpg'
+              alt='image 4'
+              text='COLOUR PROJECT'
+              textColor='text-[#E12D04]' // Different color for this image
+            />
           </div>
         </div>
       </main>
@@ -83,3 +64,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;
