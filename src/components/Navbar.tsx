@@ -5,14 +5,15 @@ import Button from './ui/Button';
 const Navbar = () => {
     return (
         <nav className="bg-[#D9D9D9]/60 backdrop-blur-lg shadow-custom-navbar w-full rounded-xl sticky top-7 z-50">
-            <div className="flex items-center justify-between h-16 px-6 py-3">
-                <div className="flex items-center h-full">
-                    <Link href='/' className='flex items-center h-full'>
-                        <div className="relative h-full w-11">
+            <div className="flex items-center justify-between px-6 py-3">
+                <div className="flex items-center">
+                    <Link href='/' className='flex items-center'>
+                        <div className="relative w-12 hover:scale-105 transition-transform">
                             <Image
                                 src="/images/logo.png"
                                 alt='Jnh Site'
-                                fill
+                                height={100}
+                                width={100}
                                 className="object-contain"
                             />
                         </div>
