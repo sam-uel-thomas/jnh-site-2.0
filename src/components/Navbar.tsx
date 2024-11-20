@@ -20,8 +20,8 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className='flex flex-row gap-4'>
-                    <Button href='/'>PORTFOLIO</Button>
-                    <Button href='/'>SHOP</Button>
+                    <Button href='/portfolio'>PORTFOLIO</Button>
+                    <Button href='/shop'>SHOP</Button>
                 </div>
             </div>
         </nav>

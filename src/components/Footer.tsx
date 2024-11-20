@@ -91,14 +91,14 @@ const Footer = () => {
                 <h1 className='underline text-base text-[#3A3A3A] font-bold'>SNEAKY LINKS</h1>
                 <div className='flex flex-row gap-x-4'>
                     <div className='flex flex-col gap-y-2'>
-                        <p className='text-base text-[#676767] font-medium'>about me</p>
-                        <p className='text-base text-[#676767] font-medium'>shop</p>
-                        <p className='text-base text-[#676767] font-medium'>colour project</p>
-                        <p className='text-base text-[#676767] font-medium'>balenciaga project</p>
+                        <Link href='/' className='text-base text-[#676767] font-medium hover:underline'>about me</Link>
+                        <Link href='/shop' className='text-base text-[#676767] font-medium hover:underline'>shop</Link>
+                        <Link href='/colour-project' className='text-base text-[#676767] font-medium hover:underline'>colour project</Link>
+                        <Link href='/balenciaga-project' className='text-base text-[#676767] font-medium hover:underline'>balenciaga project</Link>
                     </div>
                     <div className='flex flex-col gap-y-2'>
-                        <p className='text-base text-[#676767] font-medium'>general works</p>
-                        <p className='text-base text-[#676767] font-medium'>grayson perry project</p>
+                        <Link href='/general-works' className='text-base text-[#676767] font-medium hover:underline'>general works</Link>
+                        <Link href='/' className='text-base text-[#676767] font-medium hover:underline'>grayson perry project</Link>
                     </div>
                 </div>
             </div>

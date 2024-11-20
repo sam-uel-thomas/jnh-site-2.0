@@ -22,6 +22,7 @@ const Home: React.FC = () => {
           <ImageWithText 
             src='/images/landing.jpg'
             alt='landing'
+            href='/shop'
             text='SHOP THE COLLECTION'
             textColor='text-[#F0F0F0]'
             bgColor='bg-[#1D1F2C]'
@@ -32,12 +33,14 @@ const Home: React.FC = () => {
             <ImageWithText 
               src='/images/dance.jpg'
               alt='image 1'
+              href='/balenciaga-project'
               text='BALENCIAGA PROJECT'
               textColor='text-[#00069E]' // Explicitly set color
             />
             <ImageWithText 
               src='/images/MILOMODEL3.jpg'
               alt='image 2'
+              href='/shop'
               text='SHOP'
               textColor='text-[#92CE04]' // Different color for this image
             />
@@ -48,12 +51,14 @@ const Home: React.FC = () => {
             <ImageWithText 
               src='/images/skip2.jpg'
               alt='image 3'
+              href='/general-works'
               text='GENERAL WORKS'
               textColor='text-[#D703A0]' // Different color for this image
             />
             <ImageWithText 
               src='/images/skip3.jpg'
               alt='image 4'
+              href='colour-project'
               text='COLOUR PROJECT'
               textColor='text-[#E12D04]' // Different color for this image
             />
