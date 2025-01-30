@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer'
 
-const ShopPage = () => {
+const LookbookPage = () => {
     return (
         <>
             <div className='bg-white flex flex-col min-h-screen gap-y-7 px-7 pt-7 pb-14'>
@@ -11,7 +11,7 @@ const ShopPage = () => {
                 <div className='flex-grow flex justify-center items-center pt-7'>
                     <div className='grid grid-cols-1  md:grid-cols-2 gap-12'>
                         <div className='flex flex-col gap-y-4'>
-                            <Link href={'/shop/wool-trousers'}>
+                            <Link href={'/lookbook/wool-trousers'}>
                                 <Image
                                     src={'/images/WoolTrousers.jpg'}
                                     alt='Wool Trouser'
@@ -24,7 +24,7 @@ const ShopPage = () => {
                             </h2>
                         </div>
                         <div className='flex flex-col gap-y-4'>
-                            <Link href={'/shop/fencing-vest'}>
+                            <Link href={'/lookbook/fencing-vest'}>
                                 <Image
                                     src={'/images/FencingVest.jpg'}
                                     alt='Fencing Vest'
@@ -37,7 +37,7 @@ const ShopPage = () => {
                             </h2>
                         </div>
                         <div className='flex flex-col gap-y-4'>
-                            <Link href={'/shop/horse-rider-jacket'}>
+                            <Link href={'/lookbook/horse-rider-jacket'}>
                                 <Image
                                     src={'/images/HorseRider.jpg'}
                                     alt='HORSE RIDER JACKET'
@@ -50,7 +50,7 @@ const ShopPage = () => {
                             </h2>
                         </div>
                         <div className='flex flex-col gap-y-4'>
-                            <Link href={'/shop/target-practise'}>
+                            <Link href={'/lookbook/target-practise'}>
                                 <Image
                                     src={'/images/TargetPractise.jpg'}
                                     alt='Wool Trouser'
@@ -70,4 +70,4 @@ const ShopPage = () => {
     );
 }
 
-export default ShopPage;
+export default LookbookPage;

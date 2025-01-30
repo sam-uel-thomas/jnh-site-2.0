@@ -4,29 +4,29 @@ import Footer from '../../../components/Footer'
 import fs from 'fs';
 import path from 'path';
 
-interface ShopPageProps {
+interface LookbookPageProps {
   params: {
     item: string;
   };
 }
 
-const ShopItem = async ({ params }: ShopPageProps) => {
+const LookbookItem = async ({ params }: LookbookPageProps) => {
     const { item } = await params;
 
     console.log("Debug: item =", item); // Debug output
 
     if (!item) {
         console.log("Debug: Item is missing"); // Debug output
-        return <div>Error: Shop item name is missing</div>;
+        return <div>Error: Lookbook item name is missing</div>;
     }
 
-    const imagesDirectory = path.join(process.cwd(), 'public', 'shop', item);
+    const imagesDirectory = path.join(process.cwd(), 'public', 'lookbook', item);
     
     console.log("Debug: imagesDirectory =", imagesDirectory); // Debug output
 
     if (!fs.existsSync(imagesDirectory)) {
         console.log("Debug: Directory not found"); // Debug output
-        return <div>404 - Shop Item Not Found</div>;
+        return <div>404 - Lookbook Item Not Found</div>;
     }
 
     let files;
@@ -39,7 +39,7 @@ const ShopItem = async ({ params }: ShopPageProps) => {
     }
     
     const images = files.map(file => ({
-        src: `/shop/${item}/${file}`,
+        src: `/lookbook/${item}/${file}`,
         alt: `${item} image ${file}`,
     }));
 
@@ -57,8 +57,8 @@ const ShopItem = async ({ params }: ShopPageProps) => {
                                     <Image 
                                         src={image.src} 
                                         alt={image.alt} 
-                                        width={420}
-                                        height={525}
+                                        width={432}
+                                        height={540}
                                         className="object-cover"
                                     />
                                 </div>
@@ -97,4 +97,4 @@ const ShopItem = async ({ params }: ShopPageProps) => {
     );
 }
 
-export default ShopItem;
+export default LookbookItem;

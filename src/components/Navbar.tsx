@@ -4,7 +4,7 @@ import Button from './ui/Button';
 
 const Navbar = () => {
     return (
-        <nav className="bg-[#D9D9D9]/60 backdrop-blur-lg shadow-custom-navbar w-full rounded-xl sticky top-7 z-50">
+        <nav className="bg-[#D9D9D9]/60 backdrop-blur-lg shadow-custom-navbar w-full rounded-xl sticky top-4 md:top-7 mb-4 md:mb-7 z-50">
             <div className="flex items-center justify-between px-6 py-3">
                 <div className="flex items-center">
                     <Link href='/' className='flex items-center'>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex flex-row gap-4'>
                     <Button href='/portfolio'>PORTFOLIO</Button>
-                    <Button href='/shop'>SHOP</Button>
+                    <Button href='/lookbook'>LOOKBOOK</Button>
                 </div>
             </div>
         </nav>

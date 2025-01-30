@@ -9,19 +9,20 @@ interface ImageWithTextProps {
   text: string;
   textColor: string;
   bgColor?: string;
-  blurDataURL?: string; // Optional prop for blur data URL
+  blurDataURL?: string;
+  className?: string;
 }
 
-const ImageWithText: React.FC<ImageWithTextProps> = ({ src, alt, href, text, textColor, bgColor, blurDataURL }) => {
+const ImageWithText: React.FC<ImageWithTextProps> = ({ src, alt, href, text, textColor, bgColor, blurDataURL, className }) => {
   return (
     <Link href={href} passHref>
-      <div className='relative cursor-pointer'>
+      <div className={`relative cursor-pointer ${className}`}>
         <Image
           src={src}
           alt={alt}
           layout='responsive'
           width={1600}
-          height={2000}
+          height={900}
           className='object-contain'
         />
         <div 

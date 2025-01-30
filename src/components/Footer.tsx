@@ -92,7 +92,7 @@ const Footer = () => {
                 <div className='flex flex-row gap-x-4'>
                     <div className='flex flex-col gap-y-2'>
                         <Link href='/' className='text-base text-[#676767] font-medium hover:underline'>about me</Link>
-                        <Link href='/shop' className='text-base text-[#676767] font-medium hover:underline'>shop</Link>
+                        <Link href='/lookbook' className='text-base text-[#676767] font-medium hover:underline'>lookbook</Link>
                         <Link href='/colour-project' className='text-base text-[#676767] font-medium hover:underline'>colour project</Link>
                         <Link href='/balenciaga-project' className='text-base text-[#676767] font-medium hover:underline'>balenciaga project</Link>
                     </div>
