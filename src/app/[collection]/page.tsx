@@ -10,7 +10,7 @@ interface CollectionPageProps {
   };
 }
 
-const CollectionPage = async ({ params }: CollectionPageProps) => {
+const CollectionPage = async ({ params }: { params: { collection: string } }) => {
   const { collection } = params;
 
   const imagesDirectory = path.join(process.cwd(), 'public', 'collections', collection);
