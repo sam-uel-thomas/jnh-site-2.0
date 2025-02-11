@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-y-4 h-full'>
                     {/* First row of logos */}
                     <div className='flex flex-row gap-x-3'>
-                        <Link href='/' className='flex items-center'>
+                        <Link href='https://www.instagram.com/jonahdavies__/' className='flex items-center'>
                             <div className="relative h-10 w-10"> {/* Fixed size for logos */}
                                 <Image
                                     src="/images/IG.png"
@@ -30,7 +30,7 @@ const Footer = () => {
                                 />
                             </div>    
                         </Link>
-                        <Link href='/' className='flex items-center'>
+                        <Link href='https://www.tiktok.com/@stillsaucy' className='flex items-center'>
                             <div className="relative h-10 w-10"> {/* Fixed size for logos */}
                                 <Image
                                     src="/images/TIKTOK.png"
@@ -40,7 +40,7 @@ const Footer = () => {
                                 />
                             </div>    
                         </Link>
-                        <Link href='/' className='flex items-center'>
+                        <Link href='https://pin.it/332xp055n' className='flex items-center'>
                             <div className="relative h-10 w-10"> {/* Fixed size for logos */}
                                 <Image
                                     src="/images/PIN.png"
@@ -53,7 +53,7 @@ const Footer = () => {
                     </div>
                     {/* Second row of logos */}
                     <div className='flex flex-row gap-x-3'>
-                        <Link href='/' className='flex items-center'>
+                        <Link href='https://x.com/JonahDavies9' className='flex items-center'>
                             <div className="relative h-10 w-10"> {/* Fixed size for logos */}
                                 <Image
                                     src="/images/X.png"
@@ -63,17 +63,7 @@ const Footer = () => {
                                 />
                             </div>    
                         </Link>
-                        <Link href='/' className='flex items-center'>
-                            <div className="relative h-10 w-10"> {/* Fixed size for logos */}
-                                <Image
-                                    src="/images/FB.png"
-                                    alt='Facebook'
-                                    fill
-                                    className="object-contain"
-                                />
-                            </div>    
-                        </Link>
-                        <Link href='/' className='flex items-center'>
+                        <Link href='https://www.youtube.com/channel/UCGk_uc76X9U7WhAPPgyevmA' className='flex items-center'>
                             <div className="relative h-10 w-10"> {/* Fixed size for logos */}
                                 <Image
                                     src="/images/YT.png"
@@ -81,7 +71,17 @@ const Footer = () => {
                                     fill
                                     className="object-contain"
                                 />
-                            </div>    
+                            </div>
+                        </Link>
+                        <Link href='https://www.linkedin.com/in/jonah-davies-967b44303/' className='flex items-center'>
+                            <div className="relative h-10 w-10"> {/* Fixed size for logos */}
+                                <Image
+                                    src="/images/LINKEDIN.png"
+                                    alt='LinkedIn'
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
                         </Link>
                     </div>
                 </div>
