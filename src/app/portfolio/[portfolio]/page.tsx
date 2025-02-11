@@ -4,11 +4,6 @@ import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 import Image from 'next/image';
 
-interface PortfolioProps {
-  portfolioName: string;
-  images: string[];
-}
-
 const portfolioPage = async ({ params }: { params: { portfolio: string } }) => {
   const { portfolio } = params;
 
