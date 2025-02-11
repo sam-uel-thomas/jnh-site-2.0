@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import ImageWithText from '../components/ImageWithText';
+import Link from 'next/link';
 
 const Home: React.FC = () => {
   return (
@@ -15,63 +16,74 @@ const Home: React.FC = () => {
                 backgroundPosition: 'top center'
             }}
             >
+                
             <Navbar />
         
-            {/* FIRST ROW */}
             <div className='grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-7'>
-                {/* First Row - 1 Wide */}
-                <div className="relative w-full aspect-[9/16] md:hidden"> {/* Set a height for responsive behavior */}
-                    <Image 
-                        src='/images/landingMobile.jpg'
-                        alt='landing'
-                        fill
-                        objectFit='contain'
-                    />
-                </div>
-                <div className="relative w-full aspect-[16/9] hidden md:inline-flex"> {/* Set a height for responsive behavior */}
-                    <Image 
-                        src='/images/landingWeb.jpg'
-                        alt='landing'
-                        fill
-                        objectFit='contain'
-                    />
-                </div>
+                <Link href='/lookbook'>
+                    <div className="relative w-full aspect-[9/16] md:hidden">
+                        <Image 
+                            src='/images/landingMobile.jpg'
+                            alt='landing'
+                            fill
+                            objectFit='contain'
+                        />
+                    </div>
+                    <div className="relative w-full aspect-[16/8] hidden md:inline-flex">
+                        <Image 
+                            src='/landingImages/lookbookcoverweb.jpg'
+                            alt='landing'
+                            fill
+                            objectFit='contain'
+                        />
+                    </div>
+                </Link>
             </div>
             
-            {/* SECOND ROW */}
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7'>
-                <ImageWithText 
-                    src='/images/dance.jpg'
-                    alt='image 1'
-                    href='/balenciaga-project'
-                    text='BALENCIAGA PROJECT'
-                    textColor='text-[#00069E]'
-                />
-                <ImageWithText 
-                    src='/images/MILOMODEL3.jpg'
-                    alt='image 2'
-                    href='/grayson-perry-project'
-                    text='GRAYSON PERRY PROJECT'
-                    textColor='text-[#92CE04]'
-                />
+                <Link href='/balenciaga-project'>
+                    <div className="relative w-full aspect-[4/5]">
+                        <Image 
+                            src='/landingImages/balenciagacover.jpg'
+                            alt='balenciaga cover image'
+                            fill
+                            objectFit='contain'
+                        />
+                    </div>
+                </Link>
+                <Link href='/grayson-perry-project'>
+                    <div className="relative w-full aspect-[4/5]">
+                        <Image 
+                            src='/landingImages/graysoncover.jpg'
+                            alt='balenciaga cover image'
+                            fill
+                            objectFit='contain'
+                        />
+                    </div>
+                </Link>
             </div>
             
-            {/* THIRD ROW */}
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-7'>
-                <ImageWithText 
-                    src='/images/skip2.jpg'
-                    alt='image 3'
-                    href='/general-works'
-                    text='GENERAL WORKS'
-                    textColor='text-[#D703A0]' // Different color for this image
-                />
-                <ImageWithText 
-                    src='/images/skip3.jpg'
-                    alt='image 4'
-                    href='colour-project'
-                    text='COLOUR PROJECT'
-                    textColor='text-[#E12D04]' // Different color for this image
-                />
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7'>
+                <Link href='/general-works'>
+                    <div className="relative w-full aspect-[4/5]">
+                        <Image 
+                            src='/landingImages/generalworkscover.jpg'
+                            alt='balenciaga cover image'
+                            fill
+                            objectFit='contain'
+                        />
+                    </div>
+                </Link>
+                <Link href='/colour-project'>
+                    <div className="relative w-full aspect-[4/5]">
+                        <Image 
+                            src='/landingImages/colourprojectcover.jpg'
+                            alt='balenciaga cover image'
+                            fill
+                            objectFit='contain'
+                        />
+                    </div>
+                </Link>
             </div>
         </main>
         <Footer />

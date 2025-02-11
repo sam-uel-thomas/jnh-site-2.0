@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer'
+import Link from 'next/link';
 
 const LookbookPage = () => {
     return (
         <>
             <div className='bg-white flex flex-col min-h-screen gap-y-4 md:gap-y-7 p-4 md:p-7 pb-8 md:pb-14'>
                 <Navbar/>
+                <Link href={'portfolio/main'}>
                 <div className='flex flex-row pl-12 gap-6 pt-7'>
                     <Image
                         src={'/images/MainPortfolio.jpg'}
@@ -31,6 +33,8 @@ const LookbookPage = () => {
                         />
                     </div>
                 </div>
+                </Link>
+                <Link href={'portfolio/print'}>
                 <div className='flex flex-row pl-12 gap-6'>
                     <Image
                         src={'/images/PrintPortfolio.jpg'}
@@ -55,6 +59,7 @@ const LookbookPage = () => {
                         />
                     </div>
                 </div>
+                </Link>
             </div>
             <Footer/>
         </>
