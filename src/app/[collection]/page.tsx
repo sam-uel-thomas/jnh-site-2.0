@@ -4,12 +4,6 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
 
-interface CollectionPageProps {
-  params: {
-    collection: string;
-  };
-}
-
 const CollectionPage = async ({ params }: { params: { collection: string } }) => {
   const { collection } = params;
 
