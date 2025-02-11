@@ -1,7 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import ImageWithText from '../components/ImageWithText';
 import Link from 'next/link';
 
 const Home: React.FC = () => {
