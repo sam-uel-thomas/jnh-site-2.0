@@ -3,8 +3,15 @@ import path from 'path';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
+import { GetStaticProps, GetStaticPaths } from 'next';
 
-const CollectionPage = async ({ params }: { params: { collection: string } }) => {
+interface CollectionPageProps {
+  params: {
+    collection: string;
+  };
+}
+
+const CollectionPage = async ({ params }: CollectionPageProps) => {
   const { collection } = params;
 
   const imagesDirectory = path.join(process.cwd(), 'public', 'collections', collection);
