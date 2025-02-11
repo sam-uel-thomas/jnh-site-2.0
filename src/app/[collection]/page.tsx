@@ -32,25 +32,25 @@ const CollectionPage = async ({ params }: { params: { collection: string } }) =>
 
   return (
     <>
-        <div className='bg-white flex flex-col gap-y-7 p-7'>
-            <Navbar/>
-            <h1 className='border-4 font-bold text-[#3A3A3A] border-[#3A3A3A] rounded-3xl px-3 py-1 w-fit'>
-                {collection.replace(/-/g, ' ').toUpperCase()}
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-                {images.map((image, index) => (
-                    <div key={index} className="relative w-full aspect-[4/5]"> {/* Set a height for responsive behavior */}
-                        <Image 
-                            src={image.src} 
-                            alt={image.alt} 
-                            fill
-                            className="object-contain"
-                        />
-                    </div>
-                ))}
+      <div className='bg-white flex flex-col gap-y-7 p-7'>
+        <Navbar/>
+        <h1 className='border-4 font-bold text-[#3A3A3A] border-[#3A3A3A] rounded-3xl px-3 py-1 w-fit'>
+          {collection.replace(/-/g, ' ').toUpperCase()}
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+          {images.map((image, index) => (
+            <div key={index} className="relative w-full aspect-[4/5]">
+              <Image 
+                src={image.src} 
+                alt={image.alt} 
+                fill
+                className="object-contain"
+              />
             </div>
+          ))}
         </div>
-        <Footer/>
+      </div>
+      <Footer/>
     </>
   );
 };
