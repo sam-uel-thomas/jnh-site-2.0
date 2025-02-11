@@ -3,7 +3,6 @@ import path from 'path';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
-import { GetStaticProps, GetStaticPaths } from 'next';
 
 interface CollectionPageProps {
   params: {
